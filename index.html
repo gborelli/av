@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AV - Arrampicare in Valsesia</title>
+  <meta name="description" content="Notizie, informazioni e guide sul mondo dell'arrampicata sportiva in Valsesia.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+    
+    body {
+      height: 100vh;
+      background-image: url('./background.png');
+      background-size: contain;
+      background-position: center;
+      background-position-y: 50px;
+      background-repeat: no-repeat;
+      position: relative;
+      color: black;
+      background-color: white;
+      overflow: hidden;
+    }
+    
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      /* flex-direction: column;
+      justify-content: center;
+      align-items: center; */
+    }
+
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 21%;
+      height: 63px;
+      background-color: rgba(255, 255, 255, 0.9);
+      background-image: url('./claim.png');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 10;
+    }
+    
+    .logo h1 {
+      visibility: hidden;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    
+    .content {
+      /* text-align: center; */
+      max-width: 800px;
+      padding: 0 20px;
+    }
+    
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    p {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      line-height: 1;
+    }
+    
+    .social-icons {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      gap: 1rem;
+      z-index: 100;
+    }
+    
+    .social-icon {
+      width: 50px;
+      height: 50px;
+      background-color: white;
+      border-radius: 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #333;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      font-size: 1.5rem;
+    }
+    
+    .social-icon:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    
+    .social-icon.facebook {
+      color: white;
+      background-color: #1877f2;
+    }
+    
+    .social-icon.instagram {
+      color: white;
+      background-color: #e4405f;
+
+    }
+    
+    em {
+      font-style: italic;
+      font-weight: 700;
+    }
+    
+    @media (max-width: 768px) {
+      body {
+        background-position-y: 70px;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+      
+      p {
+        font-size: 1.2rem;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      body {
+        background-position-y: 120px;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+      
+      p {
+        font-size: 1rem;
+      }
+      
+      .social-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <div class="content">
+      <div class="logo">
+        <h1>AV People</h1>
+      </div>
+
+      <div class="social-icons">
+        <a href="#" class="social-icon facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="social-icon instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
